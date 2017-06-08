@@ -12,9 +12,16 @@
   <filter-mapping>
     <filter-name>FirstFilter</filter-name>
     <url-pattern>/index.jsp</url-pattern>
+    <dispatcher>REQUEST</dispatcher>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>FirstFilter</filter-name>
+    <url-pattern>/main.jsp</url-pattern>
+    <dispatcher>REQUEST</dispatcher>
   </filter-mapping>
   
-  <filter>
+  <!--  
+    <filter>
         <filter-name>SecondFilter</filter-name>
         <filter-class>com.imooc.filter.SecondFilter</filter-class>
     </filter>
@@ -22,4 +29,6 @@
         <filter-name>SecondFilter</filter-name>
         <url-pattern>/index.jsp</url-pattern>
     </filter-mapping>
+   --> 
+    
 </web-app>
