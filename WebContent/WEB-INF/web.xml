@@ -4,17 +4,22 @@
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
+  
   <filter>
-  	<filter-name>FirstFilter</filter-name>
-  	<filter-class>com.imooc.filter.FirstFilter</filter-class>
-  	<init-param>
-  		<param-name>name</param-name>
-  		<param-value>zhangsan</param-value>
-  	</init-param>
+    <filter-name>FirstFilter</filter-name>
+    <filter-class>com.imooc.filter.FirstFilter</filter-class>
   </filter>
   <filter-mapping>
-  	<filter-name>FirstFilter</filter-name>
-  	<url-pattern>/*</url-pattern>
+    <filter-name>FirstFilter</filter-name>
+    <url-pattern>/index.jsp</url-pattern>
   </filter-mapping>
   
+  <filter>
+        <filter-name>SecondFilter</filter-name>
+        <filter-class>com.imooc.filter.SecondFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SecondFilter</filter-name>
+        <url-pattern>/index.jsp</url-pattern>
+    </filter-mapping>
 </web-app>
