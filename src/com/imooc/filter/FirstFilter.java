@@ -21,16 +21,9 @@ public class FirstFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		System.out.println("start----doFilter--FirstFilter");
 		
-//		chain.doFilter(request, response);
-		
-		//强制跳转到main.jsp
 		HttpServletRequest req =(HttpServletRequest) request;
-//		HttpServletResponse response2 =(HttpServletResponse) response;
-//		response2.sendRedirect(req.getContextPath()+"/main.jsp");
-		// 转发1
-		req.getRequestDispatcher("main.jsp").forward(request, response);
-		// 转发2
-//		req.getRequestDispatcher("main.jsp").include(request, response);
+		HttpServletResponse response2 =(HttpServletResponse) response;
+		response2.sendRedirect(req.getContextPath()+"/middle.jsp");
 		
 		System.out.println("end------doFilter--FirstFilter");
 	}
