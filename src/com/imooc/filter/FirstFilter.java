@@ -27,6 +27,10 @@ public class FirstFilter implements Filter {
 		HttpServletRequest req =(HttpServletRequest) request;
 		HttpServletResponse response2 =(HttpServletResponse) response;
 		response2.sendRedirect(req.getContextPath()+"/main.jsp");
+		// 转发1
+//		req.getRequestDispatcher("main.jsp").forward(request, response);
+		// 转发2
+//		req.getRequestDispatcher("main.jsp").include(request, response);
 		
 		System.out.println("end------doFilter--FirstFilter");
 	}

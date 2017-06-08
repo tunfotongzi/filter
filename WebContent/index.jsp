@@ -8,7 +8,7 @@
 <body>
 	This is my JSP page. <br>
     <%
-    System.out.println("处理过程完成");
+       System.out.println("处理过程完成");
      %>
 </body>
 </html>
