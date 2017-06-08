@@ -15,13 +15,13 @@
     <dispatcher>REQUEST</dispatcher>
   </filter-mapping>
   
-  <!--  
+ 
   <filter-mapping>
     <filter-name>FirstFilter</filter-name>
     <url-pattern>/main.jsp</url-pattern>
-    <dispatcher>REQUEST</dispatcher>
+    <dispatcher>FORWARD</dispatcher>
   </filter-mapping>
-  --> 
+
   <!--  
     <filter>
         <filter-name>SecondFilter</filter-name>

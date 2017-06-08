@@ -25,10 +25,10 @@ public class FirstFilter implements Filter {
 		
 		//强制跳转到main.jsp
 		HttpServletRequest req =(HttpServletRequest) request;
-		HttpServletResponse response2 =(HttpServletResponse) response;
-		response2.sendRedirect(req.getContextPath()+"/main.jsp");
+//		HttpServletResponse response2 =(HttpServletResponse) response;
+//		response2.sendRedirect(req.getContextPath()+"/main.jsp");
 		// 转发1
-//		req.getRequestDispatcher("main.jsp").forward(request, response);
+		req.getRequestDispatcher("main.jsp").forward(request, response);
 		// 转发2
 //		req.getRequestDispatcher("main.jsp").include(request, response);
 		
@@ -41,3 +41,5 @@ public class FirstFilter implements Filter {
 	}
 
 }
+
+
