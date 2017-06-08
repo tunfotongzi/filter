@@ -23,7 +23,7 @@ public class FirstFilter implements Filter {
 		
 		HttpServletRequest req =(HttpServletRequest) request;
 		HttpServletResponse response2 =(HttpServletResponse) response;
-		response2.sendRedirect(req.getContextPath()+"/middle.jsp");
+		response2.sendRedirect(req.getContextPath()+"/main.jsp");
 		
 		System.out.println("end------doFilter--FirstFilter");
 	}
